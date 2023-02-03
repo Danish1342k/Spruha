@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPRUHA</title>
+    <!-- External css link -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- boostrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- W3 school Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div id="rightsideNav">
+            <div class="leftone">
+                <div id="menu-toggle" onclick="toggleMenu(); opensidebaratmedia();">
+                    <span class="toggle-btn">&#9776;</span>
+                </div>
+                <div class="input-group ">
+                    <div class="input-group-btn search-panel d-flex">
+                        <select class="form-control">
+                            <option>choose one </option>
+                            <option>hello </option>
+                        </select>
+                        <input type="search" class="form-control" placeholder="Search for anything...">
+                        <button class="btn search-btn"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+                <div class="color-logo">
+                    <img src="/image/colorl-ogp.png" alt="logo" height="100%" width="100%">
+                </div>
+            </div>
+            <div class="rightone">
+                <div class="themChange">
+                    <i class="fa">&#xf186;</i>
+                </div>
+                <div class="fullscren">
+                    <i class="fa-solid fa-expand"></i>
+
+                </div>
+                <div class="flag">
+                    <img src="/image/united-kingdom.png" alt="USA" width="100%" height="100%">
+                </div>
+                <div class="notification pe-3 ps-3">
+                    <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                        <i class="bi bi-bell"></i>
+                        <span class="badge bg-danger badge-number">4</span>
+                    </a>
+                </div>
+                <div class="message pe-3 ps-3">
+                    <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                        <i class="bi bi-chat-left-text"></i>
+                        <span class="badge bg-success badge-number">6</span>
+                    </a>
+                </div>
+                <div class="profile">
+                    <img src="/image/profileimg.jpg" alt="Profile" class="rounded-circle" width="40px" height="40px">
+                </div>
+                <div class="rightToggle">
+                    <span class="toggle-btnn" onclick="toggleSideBar()">&#9776;</span>
+                </div>
+                <div class="setting">
+                    <i class="fa-solid fa-cog fa-spin"></i>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <section id="right-side">
+            <div class="container-fluid">
+                <div class="page-title p-3">
+                    <div class="leftSide">
+                        <h2>Welcome To Deshboard</h2>
+                        <p>Home / Project Dashboard</p>
+                    </div>
+                    <div class="rightSide">
+                        <div class="justify-content-center">
+                            <button type="button" class="btn btn-white btn-icon-text my-2 me-2 bg-white p-2">
+                                <i class="bi bi-download me-2"></i>Import </button>
+                            <button type="button" class="btn btn-white btn-icon-text my-2 me-2 bg-white p-2">
+                                <i class="bi bi-funnel me-2"></i>Filter </button>
+                            <button type="button" class="btn my-2 btn-icon-text maincolor p-2">
+                                <i class="bi bi-cloud-arrow-down me-2"></i></i>Download Report </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+
+                    <!-- Left side columns top image -->
+                    <div class="col-lg-8">
+                        <div class="row">
+
+                            <div class="col-lg-12 border-white mb-5">
+                                <div class="card topimg">
+                                    <img src="/image/topimg.jpg" class="img-fluid" alt="piechart">
+                                </div>
+                            </div>
+
+                            <!-- Total Revenue -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+                                <div class="card custom-card border-white">
+                                    <div class="card-body">
+                                        <div class="card-item">
+                                            <div class="card-item-title mb-2">
+                                                <label class="main-content-label tx-13 mb-1">Total Revenue</label>
+                                                <span class="d-block tx-12 text-muted">Previous month vs this
+                                                    months</span>
+                                            </div>
+                                            <div class="card-item-body">
+                                                <div class="card-item-stat d-flex">
+                                                    <h4 class="font-weight-bold">$5,900.00 <br>
+                                                        <small><b class="text-success">55%</b> higher</small>
+                                                    </h4>
+                                                    <div class="card-icon">
+                                                        <i class="bi bi-credit-card-2-front-fill"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- New Employees -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+                                <div class="card custom-card border-white">
+                                    <div class="card-body">
+                                        <div class="card-item">
+                                            <div class="card-item-title mb-2">
+                                                <label class="main-content-label tx-13 mb-1">New Employees</label>
+                                                <span class="d-block tx-12 text-muted">Employees joined this
+                                                    month</span>
+                                            </div>
+                                            <div class="card-item-body">
+                                                <div class="card-item-stat d-flex">
+                                                    <h4 class="font-weight-bold">15 <br>
+                                                        <small><b class="text-success">5%</b> Increased</small>
+                                                    </h4>
+                                                    <div class="card-icon">
+                                                        <i class="bi bi-person-circle"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Total Expenses -->
+                            <div class="col-lg-4 col-md-12 mb-5">
+                                <div class="card custom-card border-white">
+                                    <div class="card-body">
+                                        <div class="card-item">
+                                            <div class="card-item-title mb-2">
+                                                <label class="main-content-label tx-13 mb-1">Total Expenses</label>
+                                                <span class="d-block tx-12 text-muted">Previous month vs this
+                                                    months</span>
+                                            </div>
+                                            <div class="card-item-body">
+                                                <div class="card-item-stat d-flex">
+                                                    <h4 class="font-weight-bold">$8,500 <br>
+                                                        <small><b class="text-danger">12%</b> Decrease</small>
+                                                    </h4>
+                                                    <div class="card-icon">
+                                                        <i class="bi bi-currency-dollar"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project Budget -->
+                            <div class="col-lg-12 mb-5">
+                                <div class="card border-white">
+                                    <div class="card-body">
+                                        <img src="/image/projectbudjet.jpg" class="img-fluid" alt="piechart"
+                                            width="100%" height="100%">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Today Task -->
+                            <div class="col-lg-6 col-md-12 mb-5">
+                                <div class="card border-white">
+                                    <div class="tasks d-flex justify-content-between align-items-center p-2">
+                                        <div class="text">
+                                            <h4 class="m-0">TODAY TASKS</h4>
+                                        </div>
+                                        <div class="me-3 d-flex text-muted tx-13 circle">
+                                            <span class="me-2">Project</span>
+                                            <span class="ms-2">Inprogress</span>
+                                        </div>
+                                    </div>
+                                    <span class="d-block tx-12 mt-2 mb-0 text-muted pb-2 ps-2 pe-2"> UX UI &amp;
+                                        Backend Developement. </span>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 my-auto">
+                                                <h6 class="mb-3 font-weight-normal">Project-Budget</h6>
+                                                <div class="text-start blue">
+                                                    <h3 class="font-weight-bold me-3 mb-2 text-primary">$5,240</h3>
+                                                    <p class="tx-13 my-auto text-muted">May 28 - June 01 (2018)</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 my-auto">
+                                                <div class="pie" style="--p:50;--c:#6259ca;--b:6px"> 75%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Top Inquiries -->
+                            <div class="col-lg-6 col-md-12 mb-5">
+                                <div class="card border-white">
+                                    <div class="tasks d-flex justify-content-between align-items-center p-2">
+                                        <div class="text">
+                                            <h4 class="m-0">Top Inquiries</h4>
+                                        </div>
+                                    </div>
+                                    <span class="d-block tx-12 mt-2 mb-0 text-muted pb-2 ps-2 pe-2"> UX UI &amp;
+                                        Backend Developement. </span>
+                                    <div class="card-body">
+                                        <div class="row mt-1">
+                                            <div class="col-5"> <span class="">Brand identity</span> </div>
+                                            <div class="col-4 my-auto">
+                                                <div class="progress" role="progressbar" aria-label="Basic example"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar" style="width: 75%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="d-flex"> <span class="tx-13">
+                                                        <i
+                                                            class="text-success fa-solid fa-up-long"></i><b>24.75%</b></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col-5"> <span class="">UI &amp; UX design</span> </div>
+                                            <div class="col-4 my-auto">
+                                                <div class="progress" role="progressbar" aria-label="Basic example"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar" style="width: 50%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="d-flex"> <span class="tx-13"><i
+                                                            class="text-danger fa-solid fa-up-long"></i><b>12.34%</b></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col-5"> <span class="">Product design</span> </div>
+                                            <div class="col-4 my-auto">
+                                                <div class="progress" role="progressbar" aria-label="Basic example"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar" style="width: 40%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="d-flex"> <span class="tx-13"><i
+                                                            class="text-success  fa-solid fa-up-long"></i><b>12.75%</b></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Task -->
+                            <div class="col-lg-12 mb-5">
+                                <div class="card border-white p-3">
+                                    <div class="card-title d-flex">
+                                        <div class="text">
+                                            <h5>TASKS</h5>
+                                            <p>A task is accomplished by a set deadline, and must contribute
+                                                toward work-related objectives.</p>
+                                        </div>
+                                        <div class="dot">
+                                            <i class="bi bi-three-dots"></i>
+                                        </div>
+                                    </div>
+
+                                    <table class="table table-borderless">
+                                        <thead>
+                                            <tr>
+                                                <th class="">TASKS</th>
+                                                <th class="">Team</th>
+                                                <th class="">Open Task</th>
+                                                <th class="">Prorety</th>
+                                                <th class="">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th> <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <span> Evaluating
+                                                        the design </span>
+                                                </th>
+                                                <td>
+                                                    <div class="images d-flex">
+                                                        <img class="imege" src="/image/profileimg.jpg">
+                                                        <img class="imege one" src="/image/digiwat.jpg">
+                                                        <img class="imege two" src="/image/flicker.jpg">
+                                                        <img class="imege three" src="/image/flick.jpg">
+                                                    </div>
+                                                </td>
+                                                <td>37</td>
+                                                <td class="blue">High</td>
+                                                <td><span class="badge one">Completed</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th><input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault"> <span> Evaluating
+                                                        the design </span></th>
+                                                <td>
+                                                    <div class="images d-flex">
+                                                        <img class="imege" src="/image/flicker.jpg">
+                                                        <img class="imege one" src="/image/intoxia.jpg">
+                                                        <img class="imege two" src="/image/digiwat.jpg">
+                                                        <img class="imege three" src="/image/fli.jpg">
+                                                    </div>
+                                                </td>
+                                                <td>37</td>
+                                                <td class="red">High</td>
+                                                <td><span class="badge two">pending</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th><input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault"><span> Evaluating
+                                                        the design </span>
+                                                </th>
+                                                <td>
+                                                    <div class="images d-flex">
+                                                        <img class="imege" src="/image/fiveimg.jpg">
+                                                        <img class="imege one" src="/image/sevenimg.jpg">
+                                                        <img class="imege two" src="/image/sixthimg.jpg">
+                                                        <img class="imege three" src="/image/eightimg.jpg">
+                                                    </div>
+                                                </td>
+                                                <td>37</td>
+                                                <td class="yellow">High</td>
+                                                <td><span class="badge three">Completed</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th><input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault"><span> Evaluating
+                                                        the design </span></th>
+
+                                                <td>
+                                                    <div class="images d-flex">
+                                                        <img class="imege" src="/image/digiwat.jpg">
+                                                        <img class="imege one" src="/image/sixthimg.jpg">
+                                                        <img class="imege two" src="/image/fiveimg.jpg">
+                                                        <img class="imege three" src="/image/sevenimg.jpg">
+                                                    </div>
+                                                </td>
+                                                <td>37</td>
+                                                <td class="blue">High</td>
+                                                <td><span class="badge four">rejected</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- Right side columns -->
+                    <div class="col-lg-4">
+
+                        <!-- Recent Transaction -->
+                        <div class="card mb-4 border-white">
+                            <div class="profiles p-3">
+                                <h5 class="card-title">Recent transcations </h5>
+                                <p>Projects where development work is on completion</p>
+
+                                <div class="profileFlicker d-flex justify-content-between p-2">
+                                    <div class="rightsideProfile">
+                                        <img src="/image/flicker.jpg" alt="" width="100%" height="100%">
+                                    </div>
+                                    <div class="text me-2">
+                                        <h6>Flicker </h6>
+                                        <p>App improvement</p>
+                                    </div>
+                                    <div class="price">
+                                        <h6>$45.234 <i class="fa-solid fa-turn-up text-success"></i></h6>
+                                        <p>12 Jan 2020</p>
+                                    </div>
+                                </div>
+
+                                <div class="profileFlicker d-flex justify-content-between p-2">
+                                    <div class="rightsideProfile">
+                                        <img src="/image/intoxia.jpg" alt="" width="100%" height="100%">
+                                    </div>
+                                    <div class="text me-5">
+                                        <h6>intoxica</h6>
+                                        <p>Milestone</p>
+                                    </div>
+                                    <div class="price">
+                                        <h6>$45.234 <i class="fa-solid fa-turn-down text-danger"></i></h6>
+                                        <p>12 Jan 2020</p>
+                                    </div>
+                                </div>
+
+                                <div class="profileFlicker d-flex justify-content-between p-2">
+                                    <div class="rightsideProfile">
+                                        <img src="/image/digiwat.jpg" alt="" width="100%" height="100%">
+                                    </div>
+                                    <div class="text me-4">
+                                        <h6>digiwatt</h6>
+                                        <p>Sales executive</p>
+                                    </div>
+                                    <div class="price">
+                                        <h6>$45.234 <i class="fa-solid fa-turn-down text-danger"></i></h6>
+                                        <p>12 Jan 2020</p>
+                                    </div>
+                                </div>
+
+                                <div class="profileFlicker d-flex justify-content-between p-2">
+                                    <div class="rightsideProfile">
+                                        <img src="/image/fli.jpg" alt="" width="100%" height="100%">
+                                    </div>
+                                    <div class="text me-5">
+                                        <h6>Flicker</h6>
+                                        <p>Milestone 2</p>
+                                    </div>
+                                    <div class="price">
+                                        <h6>$45.234 <i class="fa-solid fa-turn-up text-success"></i></h6>
+                                        <p>12 Jan 2020</p>
+                                    </div>
+                                </div>
+
+                                <div class="profileFlicker d-flex justify-content-between p-2">
+                                    <div class="rightsideProfile">
+                                        <img src="/image/flick.jpg" alt="" width="100%" height="100%">
+                                    </div>
+                                    <div class="text me-2">
+                                        <h6>Flicker</h6>
+                                        <p>App improvement</p>
+                                    </div>
+                                    <div class="price">
+                                        <h6>$45.234 <i class="fa-solid fa-turn-down text-danger"></i></h6>
+                                        <p>12 Jan 2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Launch -->
+                        <div class="card mb-4 border-white">
+                            <div class="projectLaunch">
+                                <div class="leftOne">
+                                    <h4>Project Launch</h4>
+                                    <p>the project is going to launch <br>
+                                        <span class="text-primary">145</span><br>
+                                        12 Monday, Oct 2020
+                                    </p>
+                                </div>
+                                <div class="rightOne">
+                                    <img src="/image/project_launch.png" alt="rocket" height="100%" width="100%">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- On goiong projects -->
+                        <div class="card mb-4 border-white">
+                            <div class="ongoingproject">
+                                <div class="card-title p-2">
+                                    <h5> On goiong projects </h5>
+                                    <p>Projects where development work is on completion</p>
+                                </div>
+                                <div class="card border-white">
+                                    <div class="designer d-flex align-items-center">
+                                        <div class="images d-flex">
+                                            <img class="imege" src="/image/profileimg.jpg">
+                                            <img class="imege one" src="/image/fli.jpg">
+                                            <img class="imege two" src="/image/fiveimg.jpg">
+                                            <img class="imege three" src="/image/flick.jpg">
+                                            <h4 class="four">Design team</h4>
+                                        </div>
+                                        <div class="dots">
+                                            <a class="icon" href="#" data-bs-toggle="dropdown"><i
+                                                    class="bi bi-three-dots"></i></a>
+
+                                        </div>
+                                    </div>
+                                    <div class="designer d-flex align-items-center justify-content-between">
+                                        <div class="text mt-3">
+                                            <p><span>25 August 2020</span></p>
+                                            <h6 class="f-12"> Mobile app design </h6>
+                                        </div>
+                                        <div class="pie-chart">
+                                            <img class="imege" src="/image/pie-chart.jpg" width="50px" height="50px">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-white">
+                                    <div class="designer d-flex align-items-center">
+                                        <div class="images d-flex">
+                                            <img class="imege" src="/image/flicker.jpg">
+                                            <img class="imege one" src="/image/intoxia.jpg">
+                                            <img class="imege two" src="/image/digiwat.jpg">
+                                            <img class="imege three" src="/image/fli.jpg">
+                                            <h4 class="four">Design team</h4>
+                                        </div>
+                                        <div class="dots">
+                                            <a class="icon" href="#" data-bs-toggle="dropdown"><i
+                                                    class="bi bi-three-dots"></i></a>
+
+                                        </div>
+                                    </div>
+                                    <div class="designer d-flex align-items-center justify-content-between">
+                                        <div class="text mt-3">
+                                            <p><span>12 JUNE 2020</span></p>
+                                            <h6> Website Redesign </h6>
+                                        </div>
+                                        <div class="pie-chart">
+                                            <img class="imege" src="/image/pie-chart.jpg" width="50px" height="50px">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Website Design -->
+                        <div class="card mb-4 border-white">
+                            <div class="card-body">
+                                <div class="title">
+                                    <div class="head d-flex justify-content-between align-items-center p-2">
+                                        <h4 class="m-0">Website Design</h4>
+                                        <p class="m-0 text-muted">Running</p>
+                                    </div>
+
+                                    <div class="text">
+                                        <p class="me-3 d-flex text-muted tx-13">Task completed : 7/10
+                                        <p>
+                                    </div>
+                                </div>
+                                <div class="progressbar">
+
+                                </div>
+                                <div class="bottom d-flex justify-content-between align-items-center">
+                                    <div class="mt-4">
+                                        <div class="d-flex mb-2">
+                                            <p>Client :</p>
+                                            <p><strong> John Deo</strong></p>
+                                        </div>
+                                        <div class="d-flex mb-0">
+                                            <p>Deadline :</p>
+                                            <p>25 Dec 2020</p>
+                                        </div>
+                                    </div>
+                                    <div class="logo">
+                                        <img alt="" class="ht-50" src="/image/project-logo.png" height="50px"
+                                            width="50px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Footer-Side -->
+                    <div class="col-lg-12 mt-4">
+                        <div class="card mb-2 border-white">
+                            <div class="copyright d-flex justify-content-center align-items-center text-muted p-3">
+                                &copy; Copyright@2023 <strong><span class="me-2 ms-2">Spruha</span></strong>Designed
+                                by
+                                <span class="text-primary me-2 ms-2">Danish</span> All Rights Reserved
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="sidebar-menu">
+
+            <ul>
+                <div class="headlogo">
+                    <img src="/image/logo-light.png" alt="logo">
+                    <span onclick="closeicon()">X</span>
+                </div>
+
+                <li class="nav-header pt-2 pb-2">
+                    <span class="nav-label">Dashboard</span>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <i class="fa-solid fa-house sidemenu-icon"></i>
+                        <span class="">Dashboard</span> </a>
+
+                </li>
+
+                <li class="nav-item pt-3 pb-3">
+                    <a class="nav-link collapsed active" data-bs-target="#Crypto" data-bs-toggle="collapse" href="#">
+                        <i class="fa-solid fa-wallet"></i>
+                        <span class=" ms-4">Crypto Currencies </span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <ul id="Crypto" class="nav-content collapse nav-item " data-bs-parent="#sidebar-nav">
+                        <li class="side-menu-label1">
+                            <a><i class="fa-brands fa-bitcoin"></i>Bitcoin News</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item pt-3 pb-3 ">
+                    <a class="nav-link collapsed" data-bs-target="#Ecommerce" data-bs-toggle="collapse" href="#">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class=" ms-4">ECommerce</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <ul id="Ecommerce" class="nav-content collapse nav-item " data-bs-parent="#sidebar-nav">
+                        <li class="side-menu-label1">
+                            <a><i class="fa-solid fa-store"></i>Shopping Offer</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-header pt-2 pb-2">
+                    <span class="nav-label">LANDING</span>
+                </li>
+
+                <li class="nav-item pt-3 pb-3">
+                    <a class="nav-link">
+                        <i class="bi bi-window-sidebar"></i>
+                        <span class="  ms-4">Landing Page</span>
+                    </a>
+                </li>
+
+                <li class="nav-header pt-2 pb-2">
+                    <span class="nav-label">APPLICATIONS</span>
+                </li>
+
+                <li class="nav-item pt-3 pb-3">
+                    <a class="nav-link collapsed" data-bs-target="#Applications" data-bs-toggle="collapse" href="#">
+                        <i class="fa-solid fa-file-pen"></i>
+                        <span class=" ms-4">Applications</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <ul id="Applications" class="nav-content collapse nav-item " data-bs-parent="#sidebar-nav">
+                        <li class="side-menu-label1">
+                            <a><i class="fa-solid fa-file-pen"></i>Applications</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-header pt-2 pb-2">
+                    <span class="nav-label">COMPONENTS</span>
+                </li>
+
+                <li class="nav-item pt-3 pb-3 ">
+                    <a class="nav-link collapsed" data-bs-target="#Element" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-box2"></i>
+                        <span class=" ms-4">Element</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <ul id="Element" class="nav-content collapse nav-item " data-bs-parent="#sidebar-nav">
+                        <li class="side-menu-label1">
+                            <a><i class="bi bi-box2"></i> <span>Element</span> </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item pt-3 pb-3">
+                    <a class="nav-link collapsed" data-bs-target="#advancedUI" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-briefcase-fill"> </i>
+                        <span class=" ms-4">AdvancedUI</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <ul id="advancedUI" class="nav-content collapse nav-item" data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a>
+                                <i class="bi bi-briefcase-fill"></i><span>AdvancedUI</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-header pt-2 pb-2">
+                    <span class="nav-label">OTHER PAGE</span>
+                </li>
+
+                <li class="nav-item pt-3 pb-3">
+                    <a class="nav-link collapsed" data-bs-target="#Pages" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-palette-fill"></i>
+                        <span class=" ms-4">Pages</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <ul id="Pages" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a>
+                                <i class="bi bi-palette-fill"></i><span>Pages</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item pt-3 pb-3">
+                    <a class="nav-link collapsed" data-bs-target="#Utilities" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-shield-shaded"></i>
+                        <span class=" ms-4">Utilities</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <ul id="Utilities" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a>
+                                <i class="bi bi-shield-shaded"></i><span>Utilities</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item pt-3 pb-3">
+                    <a class="nav-link collapsed" data-bs-target="#Authentication" data-bs-toggle="collapse" href="#">
+                        <i class="fa-solid fa-lock"></i>
+                        <span class=" ms-4">Authentication</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <ul id="Authentication" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a>
+                                <i class="fa-solid fa-lock"></i><span>Authentication</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-header pt-2 pb-2">
+                    <span class="nav-label">FORMS & CHARTS</span>
+                </li>
+
+                <li class="nav-item pt-3 pb-3">
+                    <a class="nav-link collapsed" data-bs-target="#Forms" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-journal-text sidemenu-icon"></i>
+                        <span class="ms-3 forms ">Forms</span>
+                    </a>
+                    <ul id="Forms" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a>
+                                <i class="bi bi-journal-text sidemenu-icon"></i><span>Forms</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#Charts" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-bar-chart sidemenu-icon"></i>
+                        <span class="ms-3 charts ">Charts</span>
+                    </a>
+                    <ul id="Charts" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a>
+                                <i class="bi bi-bar-chart sidemenu-icon"></i><span>Charts</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </main>
+    <script src="/js/main.js"></script>
+
+</body>
+
+</html>
